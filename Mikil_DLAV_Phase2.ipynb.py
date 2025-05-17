@@ -33,7 +33,7 @@ This notebook will walk you through loading the dataset, building a model, train
 
 import gdown
 import zipfile
-'''
+
 download_url = f"https://drive.google.com/uc?id=1YkGwaxBKNiYL2nq--cB6WMmYGzRmRKVr"
 output_zip = "dlav_train.zip"
 gdown.download(download_url, output_zip, quiet=False)  # Downloads the file to your drive
@@ -51,7 +51,7 @@ output_zip = "dlav_test_public.zip"
 gdown.download(download_url, output_zip, quiet=False)
 with zipfile.ZipFile(output_zip, 'r') as zip_ref:
     zip_ref.extractall(".")
-'''
+
 """## 📂 The Dataset
 
 We are now working with a richer dataset that includes not just images and trajectories,
